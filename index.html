@@ -59,19 +59,33 @@
 </head>
 <body>
 
-    <h1>COSC 4397: Introduction to Generative AI</h1>
+    <h1>COSC 4397: Generative AI in Practice</h1>
 
     <h2>Overview</h2>
-    <p>
-        ...
+    <p style="text-align: justify;">
+        This course provides a practical, hands-on introduction to Generative AI and Large Language Models  
+(LLMs) such as Gemini, chatGPT, Claude, and open-source models like Gemma, LLaMA and leverage the technology to 
+build real world AI applications on top of LLMs. The course is introductory, generic and requires 
+background in programming and analytical thinking/Math. It can also serve students with different sub 
+majors from various disciplines—including the humanities, law, psychology, and biomedical sciences—
+who wish to understand, apply, and critically evaluate generative AI tools in real-world contexts. 
+Through guided lectures, codebase demonstration, and projects, students will explore prompt engineering, 
+retrieval-augmented generation (RAG), and model alignment concepts like Reinforcement Learning with 
+Human Feedback (RLHF), Proximal Policy, Direct Preference Optimization (PPO, DPO), Fine tuning and 
+adaptation (PEFT, LoRA) focusing on intuition and application rather than math-heavy theory. The course 
+integrates ethical considerations throughout, addressing algorithmic bias, fairness, transparency, 
+accountability, and responsible AI deployment. 
+Hands-on homeworks and a final capstone project will enable students to design, build, and evaluate 
+practical generative AI applications relevant to their interests while adhering to ethical guidelines and 
+responsible innovation principles.
     </p>
 
     <h2>Administrative Details</h2>
     <ul>
-        <li><a href="">Syllabus</a></li>
+        <li><a href="materials/syllabus.pdf">Syllabus</a></li>
         <li><a href="materials/main.pdf">Textbook</a></li>
-        <li><strong>Instructor:</strong> <a href="https://www2.cs.uh.edu/~arjun/">Arjun Mukherjee</a>    <strong>Office Hours: ...</strong></li>
-        <li><strong>TA: ...</strong>    <strong>Office Hours: ...</strong></li>
+        <li><strong>Instructor:</strong> <a href="https://www2.cs.uh.edu/~arjun/">Arjun Mukherjee</a>    <strong>Office Hours: M 10-12 Direct chat via Teams.</strong></li>
+        <li><strong>TA: Navid Ayoobi (nayoobi@cougarnet.uh.edu; Navid.ayoobi@gmail.com)</strong>    <strong>Office Hours: F 10-12 Direct chat via Teams.</strong></li>
         <li><strong>Prerequisites:</strong> COSC 2436 required. COSC 3337 (Data Science) or COSC 4397 (NLP) beneficial.</li>
     </ul>
 
@@ -86,24 +100,24 @@
         </thead>
         <tbody>
             <tr>
-                <td><strong>Weekly Quizzes</strong></td>
-                <td>??%</td>
-                <td>10 questions per lecture, due by Sunday 11:59 PM each week.</td>
-            </tr>
-            <tr>
                 <td><strong>Assignment 1</strong></td>
-                <td>??%</td>
-                <td>...</td>
+                <td>25%</td>
+                <td>TBA</td>
             </tr>
             <tr>
                 <td><strong>Assignment 2</strong></td>
-                <td>??%</td>
-                <td>...</td>
+                <td>25%</td>
+                <td>TBA</td>
             </tr>
             <tr>
-                <td><strong>Final</strong></td>
-                <td>??%</td>
-                <td>...</td>
+                <td><strong>Midterm Exam</strong></td>
+                <td>25%</td>
+                <td>TBA</td>
+            </tr>
+            <tr>
+                <td><strong>Final Exam</strong></td>
+                <td>25%</td>
+                <td>TBA</td>
             </tr>
         </tbody>
     </table>
@@ -118,7 +132,7 @@
             <tr>
                 <th style="width: 15%;">Week / Unit</th>
                 <th style="width: 35%;">Topics Covered</th>
-                <th style="width: 50%;">Resources & Deliverables</th>
+                <th style="width: 50%;">Resources & Deliverables (Self Study Quizes after Chapter - Not graded, submission not required)</th>
             </tr>
         </thead>
         <tbody>
@@ -126,12 +140,14 @@
             <tr>
                 <td><strong>Week 1</strong></td>
                 <td>
+					<strong>Topic -1:</strong> Introduction to Generative AI!<br>
+                    <strong>Topic 0:</strong> Data Science Primer<br>
                     <strong>Topic 1:</strong> Ancestors of LLMs<br>
                     <strong>Topic 2:</strong> Probabilistic Language Modeling
                 </td>
                 <td>
                     <ul>
-                        <li>Readings: <a href="materials/Ancestors of LLMs.pdf">Topic 1 Slides</a>, <a href="materials/The Language of Numbers.pdf">Topic  2 Slides</a></li>
+                        <li>Readings: <a href="materials/Generative AI in Practice Marketing.pdf">Topic -1 Slides</a>,<a href="materials/0 - Data Science Crash Course.pdf">Topic 0 Slides</a>,<a href="materials/1 - Ancestors of LLMs.pdf">Topic 1 Slides</a>, <a href="materials/2 - The Language of Numbers.pdf">Topic  2 Slides</a></li>
                         <li>Concepts: ...</li>
                         <li><strong>Deliverables:</strong> Quiz 1 & Quiz 2</li>
                     </ul>
@@ -146,7 +162,7 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Readings: <a href="materials/The Transformer Revolution.pdf">Topic 3 Slides</a>, <a href="">Topic  4 Slides</a></li>
+                        <li>Readings: <a href="materials/3 - The Transformer Revolution.pdf">Topic 3 Slides</a>, <a href="materials/4 - The Advent of LLMs.pdf">Topic  4 Slides</a></li>
                         <li>Concepts: ...</li>
                         <li><strong>Deliverables:</strong> Quiz 3 & Quiz 4</li>
                     </ul>
@@ -156,14 +172,14 @@
             <tr>
                 <td><strong>Week 3</strong></td>
                 <td>
-                    <strong>Topic 5:</strong> Intro to Prompt Engineering<br>
-                    <strong>Topic 6:</strong> Hallucinations & Limitations
+                    <strong>Topic 5:</strong> Hallucinations & Limitations<br>
+                    <strong>Topic 6:</strong> Setting Up Your Workspace
                 </td>
                 <td>
                     <ul>
-                        <li>Readings: <a href="">Topic 5 Slides</a>, <a href="">Topic  6 Slides</a></li>
+                        <li>Readings: <a href="materials/5 - Reliability and Limits.pdf">Topic 5 Slides</a>, <a href="materials/6 - Setting up your Workspace.pdf">Topic  6 Slides</a></li>
                         <li>Concepts: ...</li>
-                        <li><strong>Deliverables:</strong> Quiz 5 & Quiz 6</li>
+                        <li><strong>Deliverables:</strong> Quiz 5 </li>
                     </ul>
                 </td>
             </tr>
@@ -171,7 +187,7 @@
             <tr>
                 <td><strong>Week 4</strong></td>
                 <td>
-                    <strong>Topic 7:</strong> In-Context Learning <br>
+                    <strong>Topic 7:</strong> Introduction to Prompt Engineering <br>
                     <strong>Topic 8:</strong> Zero-Shot and Few-Shot Prompting <br>
                     <strong>Topic 9:</strong> Chain-of-Thought Reasoning
                 </td>
